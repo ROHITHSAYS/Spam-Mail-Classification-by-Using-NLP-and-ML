@@ -16,4 +16,17 @@ scikit-learn for machine learning algorithms
 nltk for natural language processing
 matplotlib and seaborn for visualization (optional)
 You can install the required libraries using pip:
+pip install pandas scikit-learn nltk matplotlib seaborn
+**Usage**
+Data Loading: The project uses a labeled dataset of emails, which is typically in CSV format, with columns like "Email Text" and "Label" (Spam/Ham).
+
+Preprocessing: The email text undergoes preprocessing steps such as lowercasing, removing special characters, and eliminating stopwords to prepare the data for feature extraction.
+
+Feature Extraction: The TF-IDF vectorizer is used to convert the processed email text into numerical vectors that can be fed into the machine learning model.
+
+Model Training: The chosen machine learning algorithm (e.g., Naive Bayes) is trained on the processed dataset.
+
+Prediction: Once the model is trained, it can predict whether a new email is spam or not based on the features extracted from the email content.
+
+Evaluation: The model's performance is assessed using metrics like accuracy, precision, recall, and F1-score, and a confusion matrix is displayed for a deeper analysis of the model’s predictions.
  
